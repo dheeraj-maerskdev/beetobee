@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MSC - Maersk Supplier Connect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+  <style>
+    
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  .card {
+    float: left;
+    max-width: 50%;
+    
+  }
+  .card-columns {
+    margin-left: 2px;
+  }
+  .card-columns .card:nth-child(2n - 1) {
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 120px;
+    min-width: 178px;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-apple {
+    background-image: url('/img/apple.jpg');
+  }
+  .card-tech {
+    background-image: url('/img/tech.jpg');
+  }
+  .card-grains {
+    background-image: url('/img/grains.jpg');
+  }
+  .card-trainers {
+    background-image: url('/img/trainers.jpg');
+  }
+  .form-search {
+    width: auto;
+    margin-right: 10px;
+    min-width: 225px;
+  }
+  .form-search + button {
+    margin-left: 10px;
+  }
+  .navbar-toggler {
+    border:none;
+    padding-left: 0;
+  }
+  .import-tab {
+    clear: both;
+  }
+  .import-tab a.active {
+    border-right: 0;
+    border-left: 0;
+  }
+  body {
+    background: #eee;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .bg-light {
+    /* background-color: #42b0d5 !important; */
+  }
+  
+  .nav-tabs a.active {
+    background: #eee !important;
+    border-bottom-color: #eee !important;
+  }
+  .nav-tabs a {
+    background: #ccc !important;
+    border-radius: 0 !important;
+    color: #aeaeae;
+  }
+  .imp-from, .imp-to {
+    content:'';
+  }
+  .top-logo {
+    background-image: url(/img/logo.PNG);
+    height: 32px;
+    width: 99px;
+    display: inline-block;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -10px;
+  }
+  .card-body {
+    padding: 1rem;
+  }
+  .import-tab .nav-link.active {
+    background: #fff !important;
+    font-size: 14px;
+    border-bottom: 0;
+    height: 42px;
+    padding:0;
+  }
+  .import-tab .nav-link.active + span {
+    font-size: 18px;
+    clear: both;
+    position: relative;
+    top:-10px;
+  }
+  .import-tab .nav-link.active + span::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+  right: -25px;
+    top: -2px;
+}
+    .import-tab .imp-from::before,.import-tab .imp-to::before {
+content: '';
+width: 30px;
+height: 30px;
+background-image: url('/img/treasure-map.png');
+display: inline-block;
+background-size: cover;
+position: relative;
+top:15px;
+margin-right: 10px;
+  }
+  .import-tab .imp-to::before {
+background-image: url('/img/map.png');
+
+  }
+  .import-tab .nav-item {
+    background: #fff;
+  }
+  </style>
+</head>
+<body>
+    <div class="pt-2 pb-1 text-center bg-light">
+        <span class="top-logo"></span>
+         Supplier Connect</div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2 form-search" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-warning my-2 my-sm-0" type="submit" style="background-color: #00243d;border:0;color:#fff">Search</button>
+      </form>
+    
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+<!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-fill">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">Raw</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Finished</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="card-columns container tab-pane active">
+      <h6 class="text-center" style="padding: 10px 0;">Raw Products</h6>
+      <div class="card-columns">
+        <div class="card shadow">
+          <div class="card-img-top card-apple"></div>
+          <div class="card-body">
+            <h5 class="card-title">Groceries</h5>
+          </div>
+        </div>
+        <div class="card shadow">
+          <div class="card-img-top card-tech"></div>
+          <div class="card-body">
+            <h5 class="card-title">Technology</h5>
+          </div>
+        </div>
+        <div class="card shadow">
+            <div class="card-img-top card-grains"></div>
+            <div class="card-body">
+              <h5 class="card-title">Grains</h5>
+            </div>
+          </div>
+          <div class="card shadow">
+            <div class="card-img-top card-trainers"></div>
+            <div class="card-body">
+              <h5 class="card-title">Trainers</h5>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h6>Finished Products</h6>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+  <ul class="nav nav-tabs nav-fill import-tab">
+    <li class="nav-item">
+      <a class="nav-link active imp-from" data-toggle="tab" href="#">Import From
+      </a>
+      <span>Asia</span>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active imp-to" data-toggle="tab" href="#">Import To
+      </a>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;London</span>
+    </li>
+  </ul>
+  <div class="py-5" style="background: #fff">Hey</div>
+  <br>
+  <br>
+  <br>
+  MSC
+</body>
+</html>
