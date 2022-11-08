@@ -52,7 +52,6 @@
     width: auto;
     margin-right: 10px;
     min-width: 225px;
-    padding-left: 40px;
   }
   .form-search + button {
     margin-left: 10px;
@@ -159,15 +158,6 @@ background-image: url('/img/map.png');
   .import-tab .nav-item {
     background: #fff;
   }
-  .search-icon {
-    display: inline-block;
-    background-size: cover;
-    background-image: url('/img/banana.png');
-    width: 20px;
-    height: 20px;
-    position: fixed;
-    left: 70px;
-  }
   .list-group-item {
     margin-top: 10px;
   }
@@ -205,17 +195,28 @@ background-image: url('/img/map.png');
 
 .rating:hover > input:checked ~ label:before{ opacity: 0.4; }
 
-.co2-emisson {
-    color: green;
+.business-interests {
+    background: #fff;
+    padding:40px;
+}
+.business-interests > div {
     font-weight: bold;
-    background-color: aquamarine;
-    padding: 0 10px;
-    border: 1px solid darkgreen;
+    background: linear-gradient(#fff, #eaeaea);
+    border: 1px solid #ccc;
     border-radius: 18px;
     font-size: 12px;
-    position: relative; 
-    left: 66px;
+    padding: 2px 20px;
+    margin-bottom: 5px;
+    display: inline-block;
 }
+.business-interests > div:nth-child(2n){
+content: '';
+background: #42b0d5;
+    color: #fff;
+display: inline-block;
+border-color: #17a2b8;
+}
+
 .complete-info {
     position: relative;
     background: linear-gradient(#f3f7f9, #dfe5e9);
@@ -248,7 +249,7 @@ label.rec {
       </button>
       <form class="form-inline">
         <div class="search-icon"></div>
-        <input value="Banana" class="form-control mr-sm-2 form-search" type="search" placeholder="Search" aria-label="Search">
+        <input value="" class="form-control mr-sm-2 form-search" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-warning my-2 my-sm-0" type="submit" style="background-color: #00243d;border:0;color:#fff">Search</button>
       </form>
     
@@ -294,6 +295,39 @@ label.rec {
       <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;London</span>
     </li>
   </ul>
+  <div class="business-interests">
+    Select from Top Business Interests <br><br>
+<div>Retail</div>
+<div>Technology</div>
+<div>Manufacturer</div>
+<div>Wholesaler</div>
+<div>Importer</div>
+<div>Electronics</div>
+<div>Flooring</div>
+<div>Vehicles/Equipment</div>
+<div>Groceries</div>
+<div>Grains</div>
+<div>Retail</div>
+<div>Technology</div>
+<div>Manufacturer</div>
+<div>Wholesaler</div>
+<div>Importer</div>
+<div>Electronics</div>
+<div>Flooring</div>
+<div>Vehicles/Equipment</div>
+<div>Groceries</div>
+<div>Grains</div>
+<div>Retail</div>
+<div>Technology</div>
+<div>Manufacturer</div>
+<div>Wholesaler</div>
+<div>Importer</div>
+<div>Electronics</div>
+<div>Flooring</div>
+<div>Vehicles/Equipment</div>
+<div>Groceries</div>
+<div>Grains</div>
+  </div>
   <ul class="list-group">
     <li class="list-group-item">
         <div>
@@ -346,27 +380,6 @@ label.rec {
     <li class="list-group-item">
         <div>
             <strong>Market Reach Suppliers
-                <labe class="co2-emisson">3% Less CO<sub>2</sub> Emission</labe>
-            </strong>
-            <div class="location"><strong>Loc:</strong> Philippines, Southeast Asia
-                <span class="rating"></span>
-                <span class="rating"></span>
-            </div>
-            <div>
-                <strong>Total Exports:</strong> 50k (Last 12 months)
-            </div>
-            <div>
-            <strong>Estimated Delivery Time:</strong> 3 Days
-            <div><strong>Estimated Price:</strong> $5/100pc</div>
-        </div>
-        <div class="complete-info">Complete Info
-            <span class="down-arrow"></span>
-        </div>
-        </div>
-    </li>
-    <li class="list-group-item">
-        <div>
-            <strong>Europe Yeast Suppliers
                 <labe class="co2-emisson">3% Less CO<sub>2</sub> Emission</labe>
             </strong>
             <div class="location"><strong>Loc:</strong> Philippines, Southeast Asia
